@@ -1,0 +1,26 @@
+{
+  "SignIn": {
+    "Title": "Sign in to Reactive Meals",
+    "Texts": {
+      "Question": "Don't have an account?",
+      "Link": "Sign up"
+    },
+    "TextFields": {
+      "Username": "Username",
+      "Password": "Password"
+    },
+    "Button": "Log in"
+  },
+  "SignUp": {
+    "Title": "Join Reactive Meals today",
+    "Texts": {
+      "Question": "Already have an account?",
+      "Link": "Log in"
+    },
+    "TextFields": {
+      "Username": "Username",
+      "Password": "Password"
+    },
+    "Button": "Create account"
+  }
+}
