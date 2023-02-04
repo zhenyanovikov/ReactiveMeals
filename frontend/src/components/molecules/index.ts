@@ -1,0 +1,1 @@
+export { IngredientCounter } from './IngredientCounter';

@@ -22,5 +22,18 @@
       "Password": "Password"
     },
     "Button": "Create account"
+  },
+  "Fridge": {
+    "Texts": {
+      "AddIngredient": "Add ingredient",
+      "YourIngredients": "Your ingredients"
+    },
+    "TextFields": {
+      "Name": "Name",
+      "Group": "Group"
+    },
+    "Buttons": {
+      "Add": "Add"
+    }
   }
 }
