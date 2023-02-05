@@ -23,6 +23,20 @@
     },
     "Button": "Create account"
   },
+  "Menu": {
+    "Texts": {
+      "Meals": "Meals"
+    },
+    "Buttons": {
+      "LearnMore": "Learn more"
+    }
+  },
+  "Meal": {
+    "Texts": {
+      "Ingredients": "Ingredients",
+      "Instructions": "Instructions"
+    }
+  },
   "Fridge": {
     "Texts": {
       "AddIngredient": "Add ingredient",

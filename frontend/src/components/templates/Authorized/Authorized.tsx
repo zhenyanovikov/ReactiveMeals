@@ -1,11 +1,10 @@
 import React, { useMemo } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import {
   Kitchen as KitchenIcon,
   RestaurantMenu as RestaurantMenuIcon,
 } from '@mui/icons-material';
 import { AppBar, Button, Container, Stack, Toolbar } from '@mui/material';
-import { grey } from '@mui/material/colors';
 
 interface IAutorizedProps {
   children: React.ReactNode;
@@ -15,7 +14,6 @@ function Authrorized(props: IAutorizedProps) {
   const { children } = props;
 
   const navigate = useNavigate();
-  const { pathname } = useLocation();
 
   const pages = useMemo(
     () => [
@@ -35,11 +33,6 @@ function Authrorized(props: IAutorizedProps) {
     []
   );
 
-  const activePage = useMemo(
-    () => pages.find((page) => page.path === pathname),
-    [pathname]
-  );
-
   return (
     <>
       <AppBar position="static">
@@ -50,9 +43,7 @@ function Authrorized(props: IAutorizedProps) {
                 <Button
                   key={page.id}
                   onClick={handlePageClick(page.path)}
-                  sx={{
-                    color: activePage?.id === page.id ? grey[50] : grey[400],
-                  }}
+                  sx={{ color: 'white' }}
                   startIcon={page.icon}
                 >
                   {page.title}

@@ -12,7 +12,7 @@ import {
 } from '@mui/material';
 
 import { IngredientCounter } from '~/components/molecules';
-import { GROUPS } from '~/constants/mocks';
+import { GROUPS } from '~/constants';
 import { en } from '~/translations';
 
 function IngredientForm() {
