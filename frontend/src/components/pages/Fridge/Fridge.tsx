@@ -1,4 +1,4 @@
-import { Container, Stack, Typography } from '@mui/material';
+import { Stack, Typography } from '@mui/material';
 
 import { Ingredient, IngredientForm } from '~/components/organisms';
 import { INGREDIENTS } from '~/constants';
@@ -6,7 +6,7 @@ import { en } from '~/translations';
 
 function Fridge() {
   return (
-    <Container maxWidth="lg">
+    <>
       <Stack marginBottom={2}>
         <Typography variant="h5" component="span">
           {en.Fridge.Texts.AddIngredient}
@@ -26,7 +26,7 @@ function Fridge() {
           <Ingredient key={ingredient.id} ingredient={ingredient} />
         ))}
       </Stack>
-    </Container>
+    </>
   );
 }
 
